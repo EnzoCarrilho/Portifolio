@@ -38,7 +38,12 @@ main{
 }
 
 .habilidades{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    height: 100px;
+    padding: 24px;
 }
 
 .card-habilidade{
