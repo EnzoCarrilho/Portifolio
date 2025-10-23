@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    padding: 20px;
+    background:linear-gradient(black, rgb(66, 66, 163));
+    color: white;
+    background-repeat: no-repeat; 
+}
+
+header{
+    height: 70px;
+    
+}
+
+header h1{
+    padding-bottom: 10px;
+}
+
+.sobre-mim{
+    border-radius: 8px;
+    box-shadow: 0 0 2px #ffff;
+    background-color: black;
+    height: 200px;
+    padding: 8px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 8px;
+    gap: 12px;
+}
+
+.habilidades{
+    
+}
+
+.card-habilidade{
+    
+}
