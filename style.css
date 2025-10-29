@@ -63,8 +63,13 @@ main{
     height: 100px;
 }
 
-
-
+.card-habilidade{
+    height: 100%;
+    width: 25%;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: darkgrey;
+}
 
 .tecnologia img{
     width: 100px;
