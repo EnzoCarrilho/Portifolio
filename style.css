@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     padding: 20px;
     background:linear-gradient(black, rgb(66, 66, 163));
     color: white;
@@ -71,7 +71,56 @@ main{
     background-color: darkgrey;
 }
 
+.tecnologia{
+    display: flex;
+    align-items: center;
+}
+
 .tecnologia img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.cards-projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-projeto{
+    border-radius: 8px;
+    width: 25%;
+    height: 100%;
+    padding: 12px;
+    background-color: black;
+    box-shadow: 0 0 2px #ffff;
+}
+
+.formacoes{
+    padding: 12px;
+}
+
+
+footer{
+    margin-top: 20px;
+}
+
+.contatos{
+    padding: 12px;
+}
+
+.contato{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contato img{
+    width: 25px;
+    height: 25px;
+}
+
+a{
+    color: black;
 }
