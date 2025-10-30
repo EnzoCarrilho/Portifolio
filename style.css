@@ -9,7 +9,8 @@ body{
     padding: 20px;
     background:linear-gradient(black, rgb(66, 66, 163));
     color: white;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    font-family: poppins; 
 }
 
 header{
@@ -19,6 +20,10 @@ header{
 
 header h1{
     padding-bottom: 10px;
+}
+
+section{
+    padding: 12px;
 }
 
 .introducao{
@@ -55,12 +60,13 @@ main{
     gap: 12px;
 }
 
-.habilidades{
+
+.cards-habilidades{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
-    height: 100px;
+    height: 100%;
 }
 
 .card-habilidade{
@@ -68,7 +74,9 @@ main{
     width: 25%;
     border-radius: 8px;
     padding: 12px;
+    height: 200px;
     background-color: darkgrey;
+    color: black
 }
 
 .tecnologia{
@@ -84,19 +92,59 @@ main{
 .cards-projetos{
     display: flex;
     justify-content: space-evenly;
+    padding-top: 12px;
 }
 
 .card-projeto{
     border-radius: 8px;
-    width: 25%;
+    width: 30%;
     height: 100%;
     padding: 12px;
     background-color: black;
     box-shadow: 0 0 2px #ffff;
+    height: 450px;
+}
+
+.card-projeto p{
+    font-size: 12px;
+}
+
+.card-projeto span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-projeto ul{
+    padding-left: 24px;
+}
+
+.card-projeto li{
+    font-size: 12px;
+}
+
+.imagem-projeto{
+    height: 40%;
+    width: 75%;
+    background-color: tomato;
+    border-radius: 4px;
+    justify-self: center;
+    margin: 8px;
+}
+
+.ferramentas{
+    padding-top: 8px;
 }
 
 .formacoes{
+    padding-top: 12px;
+}
+
+.lista-formacoes{
     padding: 12px;
+}
+
+ul{
+    gap: 8px;
 }
 
 
