@@ -97,12 +97,12 @@ main{
 
 .card-projeto{
     border-radius: 8px;
-    width: 30%;
+    width: 35%;
     height: 100%;
     padding: 12px;
     background-color: black;
     box-shadow: 0 0 2px #ffff;
-    height: 450px;
+    height: 500px;
 }
 
 .card-projeto p{
@@ -123,9 +123,9 @@ main{
 }
 
 .imagem-projeto{
-    height: 40%;
-    width: 75%;
-    background-color: tomato;
+    height: 30%;
+    width: 70%;
+    background-color:  purple;
     border-radius: 4px;
     justify-self: center;
     margin: 8px;
@@ -133,6 +133,23 @@ main{
 
 .ferramentas{
     padding-top: 8px;
+}
+
+.projetos button{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    height: 32px;
+    width: 150px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.projetos button a{
+    color: purple;
 }
 
 .formacoes{
