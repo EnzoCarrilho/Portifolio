@@ -11,6 +11,7 @@ body{
     color: white;
     background-repeat: no-repeat;
     font-family: poppins; 
+    
 }
 
 header{
@@ -67,6 +68,7 @@ main{
     align-items: center;
     gap: 24px;
     height: 100%;
+    width: 100%;
 }
 
 .card-habilidade{
@@ -188,4 +190,51 @@ footer{
 
 a{
     color: black;
+}
+
+@media(max-width: 1024px){
+    
+    .introducao{
+        padding: 0px;
+    }
+
+    .sobre-mim{
+        padding: 8px;
+    }
+
+    .sobre-mim h3{
+        font-size: 1rem;
+    }
+
+    .sobre-mim p{
+        font-size: 0.65rem;
+    }
+
+    .divisao-tecnologias h3{
+        font-size: 1rem;
+    }
+
+    .habilidades{
+        padding: 0;
+    }
+
+    .habilidades h2{
+        font-size: 20px;
+    }
+
+    .cards-habilidades{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .card-habilidade{
+        width: 100%;
+    }
+
+    .card-habilidade h3{
+        font-size: 24px;
+    }
+
+    
 }
