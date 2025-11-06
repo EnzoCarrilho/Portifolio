@@ -5,13 +5,12 @@
 }
 
 body{
-    height: 100%;
+    min-height: 100vh;
     padding: 20px;
     background:linear-gradient(black, rgb(66, 66, 163));
     color: white;
-    background-repeat: no-repeat;
+
     font-family: poppins; 
-    
 }
 
 header{
@@ -27,6 +26,27 @@ section{
     padding: 12px;
 }
 
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 8px;
+    gap: 12px;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+p, span, li, a{
+    font-size: 1.125rem;
+}
+
 .introducao{
     display: flex;
     justify-content: space-evenly;
@@ -38,8 +58,12 @@ section{
     box-shadow: 0 0 2px #ffff;
     background-color: black;
     width: 50%;
-    height: 200px;
-    padding: 8px;
+    padding: 12px;
+    padding-top: 4px;
+}
+
+.sobre-mim p{
+    margin-top: 8px;
 }
 
 .divisao-tecnologias{
@@ -53,14 +77,17 @@ section{
     grid-template-rows: repeat(2, auto);
 }
 
-main{
+.tecnologia{
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    margin-top: 8px;
-    gap: 12px;
+    align-items: center;
 }
 
+.tecnologia img{
+    width: 70px;
+    height: 70px;
+}
+
+    
 
 .cards-habilidades{
     display: flex;
@@ -69,6 +96,7 @@ main{
     gap: 24px;
     height: 100%;
     width: 100%;
+    margin-top: 8px;
 }
 
 .card-habilidade{
@@ -76,19 +104,15 @@ main{
     width: 25%;
     border-radius: 8px;
     padding: 12px;
-    height: 200px;
+    height: 260px;
     background-color: darkgrey;
     color: black
 }
 
-.tecnologia{
-    display: flex;
-    align-items: center;
-}
 
-.tecnologia img{
-    width: 50px;
-    height: 50px;
+.projetos{
+    display: flex;
+    flex-direction: column;
 }
 
 .cards-projetos{
@@ -99,20 +123,15 @@ main{
 
 .card-projeto{
     border-radius: 8px;
-    width: 35%;
-    height: 100%;
-    padding: 12px;
+    width: 30%;
+    height: auto;
+    padding: 24px;
     background-color: black;
     box-shadow: 0 0 2px #ffff;
-    height: 500px;
-}
-
-.card-projeto p{
-    font-size: 12px;
+    margin-top: 12px;
 }
 
 .card-projeto span{
-    font-size: 14px;
     font-weight: 600;
 }
 
@@ -120,21 +139,18 @@ main{
     padding-left: 24px;
 }
 
-.card-projeto li{
-    font-size: 12px;
-}
 
 .imagem-projeto{
-    height: 30%;
-    width: 70%;
+    height: 180px;
+    width: 100%;
     background-color:  purple;
     border-radius: 4px;
-    justify-self: center;
-    margin: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .ferramentas{
-    padding-top: 8px;
+    margin-top: 12px;
 }
 
 .projetos button{
@@ -143,27 +159,32 @@ main{
     align-items: center;
     justify-content: center;
     margin-top: 32px;
-    height: 32px;
-    width: 150px;
+    height: 40px; 
+    width: 160px;
     padding: 8px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 4px;
+}
+.projetos button:hover{
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .projetos button a{
     color: purple;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
 }
 
 .formacoes{
-    padding-top: 12px;
+    margin-top: 12px;
 }
 
 .lista-formacoes{
-    padding: 12px;
-}
-
-ul{
-    gap: 8px;
+    padding: 8px;
+    margin-left: 32px;
+    margin-top: 4px;
 }
 
 
@@ -188,8 +209,26 @@ footer{
     height: 25px;
 }
 
-a{
+footer a{
     color: black;
+}
+
+@media(max-width: 1400px){
+    
+    .card-habilidade{
+        width: 100%;
+        height: 400px;
+    }
+
+}
+
+@media(max-width: 1250px){
+
+    .card-habilidade{
+        width: 100%;
+        height: 364px;
+    }
+
 }
 
 @media(max-width: 1024px){
@@ -202,24 +241,15 @@ a{
         padding: 8px;
     }
 
-    .sobre-mim h3{
-        font-size: 1rem;
+    .tecnologia img{
+        height: 90px;
+        width: 90px;
     }
 
-    .sobre-mim p{
-        font-size: 0.65rem;
-    }
-
-    .divisao-tecnologias h3{
-        font-size: 1rem;
-    }
 
     .habilidades{
         padding: 0;
-    }
-
-    .habilidades h2{
-        font-size: 20px;
+        margin-top: 24px;
     }
 
     .cards-habilidades{
@@ -230,10 +260,15 @@ a{
 
     .card-habilidade{
         width: 100%;
+        height: 200px;
     }
 
-    .card-habilidade h3{
-        font-size: 24px;
+    .projetos{
+        margin-top: 24px;
+    }
+
+    .card-projeto{
+        width: 40%;
     }
 
     
